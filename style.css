@@ -1,53 +1,44 @@
 * {
-
-
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
   height: 96vh;
-  border: 1px solid rgb(0, 17, 255);
 
   display: flex;
   flex-direction: column;
 
   margin: 15px;
-
 }
 
-.page{
+.page {
   background-image: url(/Assets/bgImg.png);
-  background-size: contain ;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
   
 }
 
-
 header {
-  border: 1px solid rgb(0, 102, 255);
   height: 10%;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
 }
-#logo{
+#logo {
   width: 110px;
-  border: 1px solid rgb(0, 102, 255);
   margin-left: 30px;
-
 }
 
-.search{
+.search {
   border: 1px solid rgb(116, 116, 116);
   width: 20%;
   display: flex;
@@ -56,11 +47,10 @@ header {
   height: 50px;
   border-radius: 15px;
 }
-.search:hover{
+.search:hover {
   border: 1px solid rgb(238, 89, 89);
-
 }
-.search input{
+.search input {
   width: 100%;
   height: 100%;
   border: none;
@@ -69,20 +59,16 @@ header {
   border-radius: 15px;
   border-left: none;
   padding-left: 13px;
-   
-
 }
-.search input:focus{
+.search input:focus {
   outline: none;
 }
-.search img{
+.search img {
   width: 15px;
   margin-right: 20px;
 }
 
-
-.cart{
-  border: 1px solid rgb(0, 102, 255);
+.cart {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,168 +76,253 @@ header {
   margin-right: 30px;
 }
 
-.cart img{
+.cart img {
   width: 55px;
 }
-#cartImg{
+#cartImg {
   width: 30px;
 }
 
-header img {}
+header img {
+}
 
-.search {}
+.search {
+}
 
-.search input {}
+.search input {
+}
 
-.cart {} 
+.cart {
+}
 
-.cart a img {}
+.cart a img {
+}
 
 main {
-  border: 1px solid red;
-  
+ 
+ border: 5px solid rgb(208, 255, 0);
   height: 90%;
-  
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-
 }
 
 .left {
-  border: 1px solid red;
+ 
   flex: 2;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-   
 }
-.cardLeft{
-  border: 1px solid rgb(70, 2, 2);
+.cardLeft {
   margin-bottom: 80px;
-  height:600px;
-  width:  400px;
-  background-color: #FF423C;
-  border-radius: 15px;
+  height: 650px;
+  width: 450px;
+  background-color: #ff423c;
+  border-radius: 30px;
   display: flex;
   position: relative;
   justify-content: center;
-  
-
-
 }
-#Charts{
+#Charts {
   height: 60%;
-  width: 35%;
+  width: 33%;
 }
-#mainChose{
+#mainChose {
   display: block;
   position: absolute;
   width: 85%;
-  margin-top:40%;
+  margin-top: 20%;
   align-self: center;
   transition: 0.3s ease;
   border: 1px solid black;
 
+  border: none;
 }
-#mainChose:hover{
+.shoe-shadow {
+  width: 50%;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.212); /* شادو أحمر ناعم */
+  border-radius: 50%;
+  filter: blur(10px);
+  position: absolute;
+  bottom: 18%; /* حسب مكان الجزمة */
+  left: 60%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+#mainChose:hover {
   transform: scale(1.1);
-
 }
-.left button{
+.left button {
   border: none;
   background-color: rgb(0, 0, 0);
-  width: 15%;
-  height: 8.5%;
+  width: 14%;
+  height: 9%;
   display: block;
   position: absolute;
-  top: 10px;
-  border-radius: 13px;
-  right: 10px;
+  top: 15px;
+  border-radius: 18px;
+  right: 15px;
   transition: 0.3s ease;
- 
-
 }
-.left button:hover{
+.left button:hover {
   transform: scale(1.1);
 }
-.left button img{
-  width: 45%;
-  
+.left button img {
+  width: 38%;
+
   color: white;
 }
 
 .middle {
-    border: 1px solid red;
-   flex: 3;
-display: flex;
-align-items: center;
-justify-content: center;
-  height: 100%;
-  flex-direction: column;
-  
-}
-
-.topMiddle {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-    flex: 1;
-    width: 100%;
-
-
-}
-
-.topMiddle h2 {
- color: #FF423C;
- font-size: 45px;
- 
-}
-
-.topMiddle p{
-  color: #000000c2;
-  border: 1px solid red;
-}
-
-.btnDiscount {
-  border: 1px solid red;
+  flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
   
+  flex-direction: column;
+  height: 100%;
+  
+
 }
 
-.btnDiscount span {}
+.topMiddle {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  flex: 1;
+  width: 100%;
+  height: 100%;
 
-.btnDiscount button {}
+  
+  
+  
+}
+.middleContainer{
+  margin-left: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-.btnDiscount button img {}
 
-.colorChose {}
+}
+.topMiddle h2 {
+  color: #ff423c;
+  font-size: 50px;
+}
 
-.colorChose a {}
+.topMiddle p {
+  color: #000000c2;
+ 
+  width: 80%;
+}
 
-.botMiddle {
-    border: 1px solid red;
-    flex: 1;
-    width: 100%;
+.btnDiscount {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
 
+.btnDiscount span {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(75, 75, 75);
+}
+
+.btnDiscount button {
+  width: 220px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 4px;
+  border-radius: 13px;
+  background-color: #fd7874;
+  color: white;
+  font-size: 18px;
+  border: none;
+  transition: 0.3s ease;
+  
+}
+.btnDiscount button:hover{
+  background-color: #ff4942;
+
+}
+
+.btnDiscount button img {
+  width: 48px;
+  
   
 }
 
-.listSizes {}
+.colorChose {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  
 
-.listSizes ul {}
+}
 
-.listSizes li a {}
+.colorChose img {
+ 
+ 
+ 
+  width: 40px;
+}
 
+.botMiddle {
+  height: 100%;
+
+ 
+  flex: 1;
+  width: 100%;
+
+}
+
+.listSizes {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+}
+
+.listSizes ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  list-style: none;
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+  border-radius: 18px;
+
+}
+
+.listSizes li{
+  padding: 15px;
+  font-size: 15px;
+  color: rgb(85, 85, 85);
+
+}
+.checkedSize{
+  background-color: #fd7874;
+  border-radius: 12px;
+
+}
 .productSelectors {
-
 }
 
 .productSelectors img {
@@ -259,19 +330,20 @@ justify-content: center;
 }
 
 .right {
-    border: 1px solid red;
-    flex: 1;
+ 
+  flex: 1;
 
   height: 100%;
 }
 
-.right button {}
+.right button {
+}
 
-.right button img {}
+.right button img {
+}
 
-.right div {}
+.right div {
+}
 
-.right div span {}
-
-
-
+.right div span {
+}
