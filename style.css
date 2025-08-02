@@ -130,7 +130,7 @@ main {
    
 }
 .cardLeft{
-  border: 1px solid red;
+  border: 1px solid rgb(70, 2, 2);
   margin-bottom: 80px;
   height:600px;
   width:  400px;
@@ -139,6 +139,7 @@ main {
   display: flex;
   position: relative;
   justify-content: center;
+  
 
 
 }
