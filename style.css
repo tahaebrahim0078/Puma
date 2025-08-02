@@ -22,7 +22,6 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
-  
 }
 
 header {
@@ -99,8 +98,7 @@ header img {
 }
 
 main {
- 
- border: 5px solid rgb(208, 255, 0);
+  border: 5px solid rgb(208, 255, 0);
   height: 90%;
 
   display: flex;
@@ -110,7 +108,6 @@ main {
 }
 
 .left {
- 
   flex: 2;
   height: 100%;
   display: flex;
@@ -183,15 +180,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   flex-direction: column;
   height: 100%;
-  
-
 }
 
 .topMiddle {
- 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,20 +193,14 @@ main {
   flex: 1;
   width: 100%;
   height: 100%;
-
-  
-  
-  
 }
-.middleContainer{
+.middleContainer {
   margin-left: 20px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-
 }
 .topMiddle h2 {
   color: #ff423c;
@@ -221,12 +209,11 @@ main {
 
 .topMiddle p {
   color: #000000c2;
- 
+
   width: 80%;
 }
 
 .btnDiscount {
- 
   display: flex;
   align-items: center;
   justify-content: start;
@@ -241,7 +228,7 @@ main {
 
 .btnDiscount button {
   width: 220px;
-  
+
   display: flex;
   align-items: center;
   justify-content: start;
@@ -253,84 +240,85 @@ main {
   font-size: 18px;
   border: none;
   transition: 0.3s ease;
-  
 }
-.btnDiscount button:hover{
+.btnDiscount button:hover {
   background-color: #ff4942;
-
 }
 
 .btnDiscount button img {
   width: 48px;
-  
-  
 }
 
 .colorChose {
- 
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 10px;
-  
-
 }
 
 .colorChose img {
- 
- 
- 
   width: 40px;
 }
 
 .botMiddle {
   height: 100%;
-
- 
+  gap: 30px;
   flex: 1;
   width: 100%;
-
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
 }
 
 .listSizes {
   display: flex;
   align-items: center;
   justify-content: start;
-
 }
 
 .listSizes ul {
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 20px;
+  justify-content: space-around;
   list-style: none;
   border: 1px solid rgb(190, 190, 190);
   padding: 10px;
   border-radius: 18px;
-
+  width: 300px;
+  height: 70px;
 }
 
-.listSizes li{
-  padding: 15px;
+.listSizes li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
   font-size: 15px;
   color: rgb(85, 85, 85);
-
+  cursor: pointer;
 }
-.checkedSize{
+.checkedSize {
   background-color: #fd7874;
   border-radius: 12px;
-
 }
 .productSelectors {
+  border: 5px solid red;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
 }
 
 .productSelectors img {
-  width: 100px;
+  width: 130px;
+
+  border: 1px solid red;
+  background-size: cover;
 }
 
 .right {
- 
   flex: 1;
 
   height: 100%;
@@ -346,4 +334,12 @@ main {
 }
 
 .right div span {
+}
+
+.active {
+  color: white !important;
+  background-color: rgb(255, 0, 123);
+  border-radius: 12px;
+  width: 50px;
+  font-weight: bold;
 }
