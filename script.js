@@ -6,7 +6,7 @@ const handleOnActiveListItem = function (e) {
     element.classList.remove("active");
 
     const currentColor = element.id;
-    element.src = `/Assets/${currentColor}.png`; // رجع الصورة العادية
+    element.src = `/Assets/${currentColor}.png`;
   });
 
   e.currentTarget.classList.add("active");
