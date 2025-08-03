@@ -303,7 +303,6 @@ main {
   border-radius: 12px;
 }
 .productSelectors {
-  border: 2px solid black;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -362,7 +361,6 @@ main {
   }
 
   body {
-    background-color: red;
   }
 }
 
@@ -411,4 +409,9 @@ main {
     margin-left: 2%;
     margin-top: 2%;
   }
+}
+
+.colorImg.activeColor {
+  border: 2px solid #000;
+  border-radius: 5px;
 }
