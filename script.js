@@ -1,6 +1,11 @@
 const listItems = document.getElementsByClassName("listItem");
 const ColorImages = document.getElementsByClassName("colorImg");
 
+
+
+
+
+
 const handleOnActiveListItem = function (e) {
   Array.from(listItems).forEach((element) => {
     element.classList.remove("active");
@@ -11,6 +16,11 @@ const handleOnActiveListItem = function (e) {
 
   e.currentTarget.classList.add("active");
 };
+
+
+
+
+
 
 function colorImgClickHandler(e) {
   if (e.target.classList.contains("activeColor")) return;
