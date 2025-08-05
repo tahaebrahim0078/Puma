@@ -31,7 +31,7 @@ section {
   align-items: start;
 }
 .nav {
-  border: orange 3px solid;
+  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 5px solid green;
+ 
   width: 100%;
 }
 
@@ -123,7 +123,7 @@ main {
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  border: 5px solid black;
+
 }
 
 .left {
@@ -132,7 +132,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  border: 5px solid green;
+
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -156,7 +156,7 @@ main {
   margin-top: 20%;
   align-self: center;
   transition: 0.3s ease;
-  border: 1px solid black;
+ 
 
   border: none;
 }
@@ -205,12 +205,10 @@ main {
   flex-direction: column;
   height: 100%;
   gap: 20px;
-  border: 1px solid red;
   padding-left: 40px;
 }
 
 .topMiddle {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -289,7 +287,6 @@ main {
   justify-content: start;
   flex-direction: column;
   width: 100%;
-  border: 1px solid red;
   height: 50%;
 }
 
@@ -297,7 +294,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 55%;
+
 }
 
 .listSizes ul {
@@ -309,7 +307,7 @@ main {
   padding: 13px;
   border-radius: 18px;
   width: 100%;
-  gap: 20px;
+  gap: 10px;
   height: 6rem;
 }
 
@@ -319,13 +317,14 @@ main {
   cursor: pointer;
   text-align: center;
   transition: 0.1s ease;
-  width: 3.5rem;
+  width: 15%;
+ 
   border-radius: 12px;
 }
 .active {
   color: white !important;
   background-color: #ff8986;
-  width: 50px;
+  
 
 
   font-weight: bold;
@@ -425,7 +424,7 @@ main {
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   html {
-    font-size: 9px;
+    font-size: 8px;
   }
   section {
     height: 100%;
@@ -435,7 +434,7 @@ main {
     width: 90%;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid green;
+  
   }
   #logo {
     margin-left: 0px;
@@ -446,7 +445,7 @@ main {
 
   .cart {
     gap: 10px;
-    border: 2px solid black;
+   
     margin-right: 0px;
   }
   .exiedBtn {
@@ -467,7 +466,7 @@ main {
   }
   main {
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .left {
     margin-bottom: 30px;
@@ -492,31 +491,222 @@ main {
     width: 90%;
 }
 
+
+
 .productSelectors{
   width: 80%;
 }
-
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Styles for small devices */
+  html {
+    font-size: 10px;
+  }
+  section {
+    height: 100%;
+  }
+
+  header {
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  #logo {
+    margin-left: 0px;
+  }
+  .search {
+    display: none;
+  }
+
+  .cart {
+    gap: 10px;
+   
+    margin-right: 0px;
+  }
+  .exiedBtn {
+    display: none;
+  }
+  .exiedBtnMeidaScreen {
+    display: block;
+    width: 3.5rem;
+  }
+  .cart {
+    padding-right: 0px;
+  }
+  .page {
+    background-image: none;
+    background: linear-gradient(to bottom, #ff8986, #ffffff);
+    height: 100%;
+    border-radius: 25px;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .left {
+    margin-bottom: 30px;
+  }
+  .cardLeft {
+  height: 40rem;
+  width: 36rem; /*27-Amr*/
+ 
+}
+  .topMiddle {
+    align-items: center;
+  }
+  .middle {
+    padding-left: 0px;
+    width: 90%;
+  }
+  .colorChose {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .botMiddle {
+    align-items: center;
+  }
+
+  .listSizes {
+    width: 90%;
+}
+
+
+
+.productSelectors{
+  width: 80%;
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 11px;
+  }
+  section {
+    height: 100vh;
+  }
+
+  header {
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  #logo {
+    margin-left: 0px;
+  }
+  .search {
+    display: none;
+  }
+
+  .cart {
+    gap: 10px;
+    margin-right: 0px;
+  }
+  .exiedBtn {
+    display: block;
+  }
+  .exiedBtnMeidaScreen {
+    display: none;
+    width: 3.5rem;
+  }
+  .cart {
+    padding-right: 0px;
+  }
+  .page {
+    background-image: block;
+   
+    height: 100%;
+    border-radius: 25px;
+  }
+  main {
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  .left {
+    margin-bottom: 30px;
+  }
+
+  .topMiddle {
+    align-items: start;
+  }
+  .middle {
+    padding-left: 0px;
+    width: 90%;
+  }
+  .colorChose {
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+  }
+  .botMiddle {
+    align-items: start;
+  }
+
+  .listSizes {
+    width: 90%;
+}
+
+
+
+.productSelectors{
+  width: 80%;
+}
   /* Styles for tablets */
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    html {
+    font-size: 13px;
+  }
+ 
   /* Styles for desktops */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
+@media (min-width: 1200px){
+    html {
+    font-size: 14px;
   /* Styles for large desktops */
 }
+}
+@media (min-width: 1300px) {
+  html{
+    font-size: 15px;
 
+  }
+  /* Styles for very large screens */
+}
 /* Extra extra large devices (very large screens, 1400px and up) */
 @media (min-width: 1400px) {
+  html{
+    font-size: 16px;
+
+  }
+  /* Styles for very large screens */
+}
+@media (min-width: 1600px) {
+  html{
+    font-size: 18px;
+
+  }
+  /* Styles for very large screens */
+}
+@media (min-width: 1800px) {
+  html{
+    font-size: 20px;
+
+  }
+  /* Styles for very large screens */
+}
+@media (min-width: 2000px) {
+  html{
+    font-size: 24px;
+
+  }
   /* Styles for very large screens */
 }
