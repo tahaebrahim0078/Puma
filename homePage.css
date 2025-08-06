@@ -1,29 +1,65 @@
-.page {
-  background-image: url(/Assets/bgImg.png);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+html {
+  font-size: 16px;
+}
+
+section {
+  width: 100%;
   height: 100vh;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:15px;
+
+}
+.page{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-image: url(Assets/HomeRectanel.png);
   background-size: contain;
+  background-repeat: no-repeat;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header {
-  height: 10%;
+  height: 6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
+
 #logo {
-  width: 10%;
-  margin-left: 30px;
-  margin-top: 10px;
+  width: 8rem;
+  margin-left: 40px;
 }
 
 .search {
   border: 1px solid rgb(116, 116, 116);
-  width: 20%;
+  width: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50%;
+  height: 3rem;
   border-radius: 15px;
 }
 .search:hover {
@@ -33,7 +69,7 @@ header {
   width: 100%;
   height: 100%;
   border: none;
-  font-size: 20px;
+  font-size: 1.5rem;
   background: transparent;
   border-radius: 15px;
   border-left: none;
@@ -43,7 +79,7 @@ header {
   outline: none;
 }
 .search img {
-  width: 7%;
+  width: 1.5rem;
   margin-right: 6%;
 }
 
@@ -52,109 +88,226 @@ header {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  margin-right: 10%;
+  margin-right: 20px;
 }
 
-.cart img {
-  width: 3vw;
+.exiedBtn {
+  width: 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.exiedBtn:hover {
+  transform: scale(1.1);
+  rotate: 180deg;
+}
+.exiedBtnMeidaScreen {
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.exiedBtnMeidaScreen :hover {
+  transform: scale(1.1);
 }
 #cartImg {
-  width: 3vw;
+  width: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#cartImg:hover {
+  transform: scale(1.1);
 }
 
-header img {
-}
-
-.search {
-}
-
-.search input {
-}
-
-.cart {
-}
-
-.cart a img {
-}
-
-.pageBody {
+main {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
-  height: 80vh;
-}
-
-.pageBody .nav {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.pageBody .content {
-  flex: 4;
-  height: 100%;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  align-items: center;
   justify-content: center;
-  padding: 100px;
-  overflow: auto;
-  height: 80%;
 }
 
-.box {
-  width: 200px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s;
-  text-align: center;
-  padding: 20px;
+.left {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 40px;
+  padding-bottom: 50px;
 }
-
-.box:hover {
-  transform: translateY(-5px);
-}
-
-.box img {
-  padding-top: 20px;
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-}
-
-.box .content {
-  padding: 15px;
-}
-
-.product-name {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #444;
-}
-
-.box .price {
-  font-size: 16px;
+.left h1 {
+  font-size: 10rem;
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  color: #2e7d32;
-  margin-bottom: 15px;
-}
 
-.add-to-cart {
-  padding: 8px 16px;
-  background-color: #ff6f00;
-  color: #fff;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 300;
+}
+.left h5 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+
+  width: 100%;
+
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.left button {
   border: none;
-  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  width: 12rem;
+  height: 3rem;
+  text-align: start;
+  padding: 0px 20px;
+
+  border-radius: 50px;
+  margin-bottom: 70px;
+  transition: 0.3s ease;
+  color: white;
+  font-weight: bold;
+  border: 2px solid black;
   cursor: pointer;
-  transition: background-color 0.2s;
+}
+.left button:hover {
+  border: 2px solid black;
+
+  background-color: rgb(255, 93, 93);
+  color: black;
+}
+.right {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 50%;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.cardLeft {
+  height: 100%;
+  width: 30rem; /*27-Amr*/
+
+  border-radius: 60px 60px 0px 0px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+#Charts {
+  height: 90%;
+  width: 40%;
+  position: absolute;
+  bottom: 50%;
+}
+.cardLeft a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  align-self: center;
+  transition: 0.3s ease;
+
+  border: none;
 }
 
-.add-to-cart:hover {
-  background-color: #e65100;
+#mainChose {
+  width: 100%;
+  transition: 0.3s ease;
 }
+#mainChose:hover {
+  transform: scale(1.1);
+}
+.shoe-shadow {
+  width: 70%;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.445); /* شادو أحمر ناعم */
+  border-radius: 50%;
+  filter: blur(10px);
+  position: absolute;
+  bottom: 20%; /* حسب مكان الجزمة */
+  left: 20%;
+
+  z-index: 0;
+}
+
+.right button {
+  border: none;
+  background-color: rgb(0, 0, 0);
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  position: absolute;
+  top: 4%;
+  border-radius: 18px;
+  right: 6%;
+  transition: 0.3s ease;
+}
+.right button:hover {
+  transform: scale(1.1);
+}
+.right button img {
+  width: 1.6rem;
+
+  color: white;
+}
+
+.cardLeft p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  color: rgb(255, 93, 93);
+  font-weight: light;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 13px;
+  }
+  .cardLeft p {
+    color: rgb(133, 133, 133);
+  }
+  .search {
+  width: 18rem;
+ 
+}
+}
+@media (max-width: 890px) {
+  html {
+    font-size: 12px;
+  }
+
+  .search {
+  width: 15rem;
+ 
+}
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 11px;
+  }
+ 
+  .search {
+  width: 14rem;
+ 
+}
+}
+
+

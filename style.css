@@ -18,6 +18,9 @@ section {
   display: flex;
   flex-direction: column;
   padding: 15px;
+     background-image: url(Assets/pumaTigerHome.png);
+   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .page {
@@ -92,14 +95,35 @@ header {
 
 .exiedBtn {
   width: 3.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  rotate: 180deg;
+
+
+}
+.exiedBtn:hover{
+  transform: scale(1.1);
 }
 .exiedBtnMeidaScreen {
   display: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+
+}
+.exiedBtnMeidaScreen :hover{
+  transform: scale(1.1);
 }
 #cartImg {
   width: 1.5rem;
-}
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
+
+}
+#cartImg:hover{
+  transform: scale(1.1);
+}
 header img {
 }
 
@@ -175,7 +199,7 @@ main {
 #mainChose:hover {
   transform: scale(1.1);
 }
-.left button {
+.left button{
   border: none;
   background-color: rgb(0, 0, 0);
   width: 13%;
@@ -190,7 +214,7 @@ main {
 .left button:hover {
   transform: scale(1.1);
 }
-.left button img {
+.left button img{
   width: 1.6rem;
 
   color: white;
@@ -685,27 +709,6 @@ main {
 @media (min-width: 1400px) {
   html{
     font-size: 16px;
-
-  }
-  /* Styles for very large screens */
-}
-@media (min-width: 1600px) {
-  html{
-    font-size: 18px;
-
-  }
-  /* Styles for very large screens */
-}
-@media (min-width: 1800px) {
-  html{
-    font-size: 20px;
-
-  }
-  /* Styles for very large screens */
-}
-@media (min-width: 2000px) {
-  html{
-    font-size: 24px;
 
   }
   /* Styles for very large screens */
