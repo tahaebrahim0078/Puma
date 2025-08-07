@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 10%;
+      }
+
+      .box1 {
+        height: 100%; /* يعتمد على ارتفاع الأب (اللي هو body) */
+        background: lightblue;
+      }
+
+      .box2 {
+        height: 100vh; /* 100% من الشاشة مهما كان حجم الأب */
+        background: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">100%</div>
+    <div class="box2">100vh</div>
+  </body>
+</html>
