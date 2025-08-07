@@ -28,9 +28,8 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  background-image: url(Assets/HomeRectanel.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #ff7b78, #680c0c);
+  border-radius: 35px;
 }
 .nav {
   width: 100%;
@@ -123,148 +122,17 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
 }
-
-.left {
+.imgBGhome img{
+  width: 100%;
   height: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  width: 50%;
-  flex-direction: column;
-  padding-right: 20px;
-  padding-left: 40px;
-  padding-bottom: 50px;
-}
-.left h1 {
-  font-size: 10rem;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+  object-fit: cover;
+  border: 1px solid rgb(0, 255, 76);
 
-  width: 100%;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: 300;
-}
-.left h5 {
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-
-  width: 100%;
-
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-.left button {
-  border: none;
-  background-color: rgb(0, 0, 0);
-  width: 12rem;
-  height: 3rem;
-  text-align: start;
-  padding: 0px 20px;
-
-  border-radius: 50px;
-  margin-bottom: 70px;
-  transition: 0.3s ease;
-  color: white;
-  font-weight: bold;
-  border: 2px solid black;
-  cursor: pointer;
-}
-.left button:hover {
-  border: 2px solid black;
-
-  background-color: rgb(255, 93, 93);
-  color: black;
-}
-.right {
-  height: 100%;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  width: 50%;
-
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.cardLeft {
-  height: 100%;
-  width: 30rem; /*27-Amr*/
-
-  border-radius: 60px 60px 0px 0px;
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-#Charts {
-  height: 90%;
-  width: 40%;
-  position: absolute;
-  bottom: 50%;
-}
-.cardLeft a {
-  display: block;
-  position: absolute;
-  width: 100%;
-  align-self: center;
-  transition: 0.3s ease;
-
-  border: none;
 }
 
-#mainChose {
-  width: 100%;
-  transition: 0.3s ease;
-}
-#mainChose:hover {
-  transform: scale(1.1);
-}
-.shoe-shadow {
-  width: 70%;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.445); /* شادو أحمر ناعم */
-  border-radius: 50%;
-  filter: blur(10px);
-  position: absolute;
-  bottom: 20%; /* حسب مكان الجزمة */
-  left: 20%;
 
-  z-index: 0;
-}
-
-.right button {
-  border: none;
-  background-color: rgb(0, 0, 0);
-  width: 4rem;
-  height: 4rem;
-  display: block;
-  position: absolute;
-  top: 4%;
-  border-radius: 18px;
-  right: 6%;
-  transition: 0.3s ease;
-}
-.right button:hover {
-  transform: scale(1.1);
-}
-.right button img {
-  width: 1.6rem;
-
-  color: white;
-}
-
-.cardLeft p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-50%);
-  width: 60%;
-  text-transform: lowercase;
-  font-size: 1.5rem;
-  color: rgb(255, 93, 93);
-  font-weight: light;
-  padding-bottom: 50px;
-}
 
 @media (max-width: 1400px) {
   html {

@@ -18,9 +18,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 15px;
-     background-image: url(Assets/pumaTigerHome.png);
-   background-size: cover;
-  background-repeat: no-repeat;
+   
 }
 
 .page {
