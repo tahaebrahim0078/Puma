@@ -1,11 +1,6 @@
 const listItems = document.getElementsByClassName("listItem");
 const ColorImages = document.getElementsByClassName("colorImg");
 
-
-
-
-
-
 const handleOnActiveListItem = function (e) {
   Array.from(listItems).forEach((element) => {
     element.classList.remove("active");
@@ -16,11 +11,6 @@ const handleOnActiveListItem = function (e) {
   e.currentTarget.classList.add("active");
 };
 
-
-
-
-
-
 function colorImgClickHandler(e) {
   if (e.target.classList.contains("activeColor")) return;
 
@@ -28,11 +18,11 @@ function colorImgClickHandler(e) {
     element.classList.remove("activeColor");
 
     const currentColor = element.id;
-    element.src = `/Assets/color${currentColor}.png`;
+    element.src = `/Assets/ProductPage/color${currentColor}.png`;
   });
 
   e.target.classList.add("activeColor");
-  e.target.src = `/Assets/colorActive.png`;
+  e.target.src = `/Assets/ProductPage/colorActive.png`;
 }
 
 Array.from(listItems).forEach((element) => {

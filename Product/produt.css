@@ -18,21 +18,19 @@ section {
   display: flex;
   flex-direction: column;
   padding: 15px;
-   
 }
 
 .page {
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
-  background-image: url(/Assets/bgImg.png);
+  background-image: url(/Assets/ProductPage/bgImg.png);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: start;
 }
 .nav {
-  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -44,7 +42,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
- 
+
   width: 100%;
 }
 
@@ -92,46 +90,39 @@ header {
   margin-right: 20px;
 }
 
-.exiedBtn {
+.menuBtn {
   width: 3.5rem;
   transition: all 0.3s ease;
   cursor: pointer;
-
-
 }
-.exiedBtn:hover{
+.menuBtn:hover {
   transform: scale(1.1);
   rotate: 180deg;
 }
-.exiedBtnMeidaScreen {
+.menuBtnMeidaScreen {
   display: none;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-
-
 }
-.exiedBtnMeidaScreen:hover{
+.menuBtnMeidaScreen:hover {
   transform: scale(1.1);
   rotate: 180deg;
-
 }
 #cartImg {
   width: 1.5rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  
-
 }
-#cartImg:hover{
+#cartImg:hover {
   transform: scale(1.1);
 }
- #cartImgMeidaScreen{
- display: none;
+#cartImgMeidaScreen {
+  display: none;
   width: 1.5rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
- }
- #cartImgMeidaScreen:hover{
+}
+#cartImgMeidaScreen:hover {
   transform: scale(1.1);
 }
 header img {
@@ -157,7 +148,6 @@ main {
   justify-content: start;
   flex-direction: row;
   width: 100%;
-
 }
 
 .left {
@@ -189,7 +179,6 @@ main {
   margin-top: 20%;
   align-self: center;
   transition: 0.3s ease;
- 
 
   border: none;
 }
@@ -208,11 +197,11 @@ main {
 #mainChose:hover {
   transform: scale(1.1);
 }
-.left button{
+.left button {
   border: none;
   background-color: rgb(0, 0, 0);
   width: 4rem;
-  height:4rem;
+  height: 4rem;
   display: block;
   position: absolute;
   top: 4%;
@@ -223,7 +212,7 @@ main {
 .left button:hover {
   transform: scale(1.1);
 }
-.left button img{
+.left button img {
   width: 1.6rem;
 
   color: white;
@@ -247,7 +236,6 @@ main {
   justify-content: end;
   gap: 10px;
   height: 50%;
-
 }
 
 .topMiddle h2 {
@@ -260,7 +248,7 @@ main {
   color: #000000c2;
   font-size: 1.3rem;
 
-  width:90%;
+  width: 90%;
 }
 
 .btnDiscount {
@@ -297,8 +285,7 @@ main {
 
 .btnDiscount button img {
   width: 3rem;
-    border-radius: 1rem;
-
+  border-radius: 1rem;
 }
 
 .colorChose {
@@ -311,7 +298,6 @@ main {
 
 .colorChose img {
   width: 3rem;
-  
 }
 
 .botMiddle {
@@ -330,7 +316,6 @@ main {
   align-items: center;
   justify-content: center;
   width: 34rem;
-
 }
 
 .listSizes ul {
@@ -354,23 +339,21 @@ main {
   transition: 0.1s ease;
   width: 4rem;
   height: 4rem;
- display: flex;
- align-items: center;
- justify-content: center;
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border-radius: 1rem;
 }
 .active {
   color: white !important;
   background-color: #ff8986;
-  
-
 
   font-weight: 500;
 }
 .productSelectors {
   width: 70%;
-    
+
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -462,7 +445,7 @@ main {
 .right div span {
 } */
 
-@media (min-width: 100px) and (max-width:  375px) {
+@media (min-width: 100px) and (max-width: 375px) {
   html {
     font-size: 7px;
   }
@@ -473,7 +456,6 @@ main {
   header {
     width: 90%;
     margin-top: 10px;
-  
   }
   #logo {
     margin-left: 0px;
@@ -484,29 +466,29 @@ main {
 
   .cart {
     gap: 5px;
-   
+
     margin-right: 0px;
   }
-  .exiedBtn {
+  .menuBtn {
     display: none;
   }
-  .exiedBtnMeidaScreen {
+  .menuBtnMeidaScreen {
     display: block;
     width: 4rem;
   }
-    #cartImg{
+  #cartImg {
     display: none;
   }
- #cartImgMeidaScreen{
- display: block;
- width:  2rem;
- }
+  #cartImgMeidaScreen {
+    display: block;
+    width: 2rem;
+  }
   .cart {
     padding-right: 0px;
   }
   .page {
     background-image: none;
-       background: linear-gradient(to bottom, #ff6363, #ffffff);
+    background: linear-gradient(to bottom, #ff6363, #ffffff);
 
     height: 100%;
     border-radius: 25px;
@@ -520,17 +502,16 @@ main {
     padding-left: 0px;
     padding-right: 0px;
   }
-    .cardLeft {
-  height: 45rem;
-  width: 35rem; /*27-Amr*/
-  
-}
+  .cardLeft {
+    height: 45rem;
+    width: 35rem; /*27-Amr*/
+  }
   .topMiddle {
     align-items: center;
   }
-    .topMiddle p{
-      text-align: center;
-    }
+  .topMiddle p {
+    text-align: center;
+  }
   .middle {
     padding-left: 0px;
     width: 90%;
@@ -546,16 +527,14 @@ main {
 
   .listSizes {
     width: 90%;
-}
+  }
 
-
-
-.productSelectors{
-  width: 80%;
-}
+  .productSelectors {
+    width: 80%;
+  }
 }
 /* Extra small devices (phones, less than 576px) */
-@media (min-width: 375px) and (max-width:  576px) {
+@media (min-width: 375px) and (max-width: 576px) {
   html {
     font-size: 9px;
   }
@@ -566,7 +545,6 @@ main {
   header {
     width: 90%;
     margin-top: 10px;
-  
   }
   #logo {
     margin-left: 0px;
@@ -577,29 +555,29 @@ main {
 
   .cart {
     gap: 5px;
-   
+
     margin-right: 0px;
   }
-  .exiedBtn {
+  .menuBtn {
     display: none;
   }
-  .exiedBtnMeidaScreen {
+  .menuBtnMeidaScreen {
     display: block;
     width: 4rem;
   }
-    #cartImg{
+  #cartImg {
     display: none;
   }
- #cartImgMeidaScreen{
- display: block;
- width:  2rem;
- }
+  #cartImgMeidaScreen {
+    display: block;
+    width: 2rem;
+  }
   .cart {
     padding-right: 0px;
   }
   .page {
     background-image: none;
-       background: linear-gradient(to bottom, #ff6363, #ffffff);
+    background: linear-gradient(to bottom, #ff6363, #ffffff);
 
     height: 100%;
     border-radius: 25px;
@@ -613,17 +591,16 @@ main {
     padding-left: 0px;
     padding-right: 0px;
   }
-    .cardLeft {
-  height: 45rem;
-  width: 35rem; /*27-Amr*/
-  
-}
+  .cardLeft {
+    height: 45rem;
+    width: 35rem; /*27-Amr*/
+  }
   .topMiddle {
     align-items: center;
   }
-    .topMiddle p{
-      text-align: center;
-    }
+  .topMiddle p {
+    text-align: center;
+  }
   .middle {
     padding-left: 0px;
     width: 90%;
@@ -639,13 +616,11 @@ main {
 
   .listSizes {
     width: 90%;
-}
+  }
 
-
-
-.productSelectors{
-  width: 80%;
-}
+  .productSelectors {
+    width: 80%;
+  }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 850px) {
@@ -656,7 +631,7 @@ main {
   section {
     height: 100%;
   }
-   .page {
+  .page {
     background-image: none;
     background: linear-gradient(to bottom, #ff6363, #ffffff);
     height: 100%;
@@ -667,7 +642,6 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-  
   }
   #logo {
     margin-left: 0px;
@@ -678,32 +652,30 @@ main {
 
   .cart {
     gap: 10px;
-   
+
     margin-right: 0px;
   }
-  .exiedBtn {
+  .menuBtn {
     display: none;
   }
-  .exiedBtnMeidaScreen {
+  .menuBtnMeidaScreen {
     display: block;
     width: 3.5rem;
   }
   .cart {
     padding-right: 0px;
   }
-  #cartImg{
+  #cartImg {
     display: none;
   }
- #cartImgMeidaScreen{
- display: block;
- }
+  #cartImgMeidaScreen {
+    display: block;
+  }
   main {
     flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 0px;
-        padding-bottom:40px ;
-
-
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 40px;
   }
   .left {
     margin-bottom: 25px;
@@ -711,10 +683,9 @@ main {
     padding-right: 0px;
   }
   .cardLeft {
-  height: 40rem;
-  width: 36rem; /*27-Amr*/
-  
-}
+    height: 40rem;
+    width: 36rem; /*27-Amr*/
+  }
   .topMiddle {
     align-items: center;
   }
@@ -734,12 +705,9 @@ main {
     align-items: center;
   }
 
-
-
-
-.productSelectors{
-  width: 80%;
-}
+  .productSelectors {
+    width: 80%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -756,7 +724,6 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
-  
   }
   #logo {
     margin-left: 15px;
@@ -769,10 +736,10 @@ main {
     gap: 10px;
     margin-right: 0px;
   }
-  .exiedBtn {
+  .menuBtn {
     display: block;
   }
-  .exiedBtnMeidaScreen {
+  .menuBtnMeidaScreen {
     display: none;
     width: 3.5rem;
   }
@@ -782,7 +749,7 @@ main {
   }
   .page {
     background-image: block;
-   
+
     height: 100%;
     border-radius: 25px;
   }
@@ -794,11 +761,10 @@ main {
     margin-bottom: 0px;
     padding-left: 20px;
   }
-.cardLeft {
-  height: 50rem;
-  width: 36rem; /*27-Amr*/
-  
-}
+  .cardLeft {
+    height: 50rem;
+    width: 36rem; /*27-Amr*/
+  }
   .topMiddle {
     align-items: start;
     gap: 20px;
@@ -817,41 +783,35 @@ main {
     align-items: start;
   }
 
-
-
-
-
   /* Styles for tablets */
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 1000px) and (max-width: 1199.98px) {
-    html {
+  html {
     font-size: 13px;
   }
- 
+
   /* Styles for desktops */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px){
-    html {
+@media (min-width: 1200px) {
+  html {
     font-size: 14px;
-  /* Styles for large desktops */
-}
+    /* Styles for large desktops */
+  }
 }
 @media (min-width: 1300px) {
-  html{
+  html {
     font-size: 15px;
-
   }
   /* Styles for very large screens */
 }
 /* Extra extra large devices (very large screens, 1400px and up) */
 @media (min-width: 1400px) {
-  html{
+  html {
     font-size: 16px;
-
   }
   /* Styles for very large screens */
 }
