@@ -61,6 +61,7 @@ header {
   justify-content: center;
   height: 3rem;
   border-radius: 15px;
+  margin-right: 100px;
 }
 .search:hover {
   border: 1px solid rgb(238, 89, 89);
@@ -93,14 +94,14 @@ header {
 
 .exiedBtn {
   width: 3.5rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   cursor: pointer;
-  rotate: 180deg;
 
 
 }
 .exiedBtn:hover{
   transform: scale(1.1);
+  rotate: 180deg;
 }
 .exiedBtnMeidaScreen {
   display: none;
@@ -109,17 +110,28 @@ header {
 
 
 }
-.exiedBtnMeidaScreen :hover{
+.exiedBtnMeidaScreen:hover{
   transform: scale(1.1);
+  rotate: 180deg;
+
 }
 #cartImg {
   width: 1.5rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-
+  
 
 }
 #cartImg:hover{
+  transform: scale(1.1);
+}
+ #cartImgMeidaScreen{
+ display: none;
+  width: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+ }
+ #cartImgMeidaScreen:hover{
   transform: scale(1.1);
 }
 header img {
@@ -142,7 +154,7 @@ main {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: row;
   width: 100%;
 
@@ -154,15 +166,14 @@ main {
   align-items: center;
   justify-content: center;
 
-
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 80px;
 }
 .cardLeft {
   height: 38rem;
   width: 30rem; /*27-Amr*/
   background-color: #ff423c;
-  border-radius: 30px;
+  border-radius: 2rem;
   display: flex;
   position: relative;
   justify-content: center;
@@ -200,12 +211,12 @@ main {
 .left button{
   border: none;
   background-color: rgb(0, 0, 0);
-  width: 13%;
-  height: 9%;
+  width: 4rem;
+  height:4rem;
   display: block;
   position: absolute;
   top: 4%;
-  border-radius: 18px;
+  border-radius: 1.1rem;
   right: 6%;
   transition: 0.3s ease;
 }
@@ -222,11 +233,10 @@ main {
   display: flex;
   align-items: start;
   justify-content: center;
-  width: 100%;
 
   flex-direction: column;
   height: 100%;
-  gap: 20px;
+  gap: 1.4rem;
   padding-left: 40px;
 }
 
@@ -234,9 +244,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
-  gap: 20px;
+  justify-content: end;
+  gap: 10px;
   height: 50%;
+
 }
 
 .topMiddle h2 {
@@ -249,7 +260,7 @@ main {
   color: #000000c2;
   font-size: 1.3rem;
 
-  width: 80%;
+  width:90%;
 }
 
 .btnDiscount {
@@ -273,7 +284,7 @@ main {
   justify-content: start;
   gap: 0.7rem;
   padding: 0.3rem;
-  border-radius: 13px;
+  border-radius: 1rem;
   background-color: #ff8986;
   color: white;
   font-size: 1.2rem;
@@ -286,7 +297,8 @@ main {
 
 .btnDiscount button img {
   width: 3rem;
-  border-radius: 13px;
+    border-radius: 1rem;
+
 }
 
 .colorChose {
@@ -299,10 +311,11 @@ main {
 
 .colorChose img {
   width: 3rem;
+  
 }
 
 .botMiddle {
-  gap: 10px;
+  gap: 30px;
 
   display: flex;
   align-items: start;
@@ -316,7 +329,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 55%;
+  width: 34rem;
 
 }
 
@@ -327,7 +340,7 @@ main {
   list-style: none;
   border: 1px solid rgb(211, 211, 211);
   padding: 13px;
-  border-radius: 18px;
+  border-radius: 1rem;
   width: 100%;
   gap: 10px;
   height: 6rem;
@@ -339,9 +352,13 @@ main {
   cursor: pointer;
   text-align: center;
   transition: 0.1s ease;
-  width: 15%;
+  width: 4rem;
+  height: 4rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
  
-  border-radius: 12px;
+  border-radius: 1rem;
 }
 .active {
   color: white !important;
@@ -349,15 +366,16 @@ main {
   
 
 
-  font-weight: bold;
+  font-weight: 500;
 }
 .productSelectors {
   width: 70%;
-  height: 100%;
+    
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  gap: 10px;
+  align-items: start;
+  gap: 15px;
 }
 .productImgSelectors {
   width: 7rem;
@@ -367,6 +385,7 @@ main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border: 1px solid rgb(221, 221, 221);
 }
 .productImgSelectors img {
   height: 8rem;
@@ -443,10 +462,9 @@ main {
 .right div span {
 } */
 
-/* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (min-width: 100px) and (max-width:  375px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
   section {
     height: 100%;
@@ -454,8 +472,7 @@ main {
 
   header {
     width: 90%;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 10px;
   
   }
   #logo {
@@ -466,7 +483,7 @@ main {
   }
 
   .cart {
-    gap: 10px;
+    gap: 5px;
    
     margin-right: 0px;
   }
@@ -475,14 +492,22 @@ main {
   }
   .exiedBtnMeidaScreen {
     display: block;
-    width: 3.5rem;
+    width: 4rem;
   }
+    #cartImg{
+    display: none;
+  }
+ #cartImgMeidaScreen{
+ display: block;
+ width:  2rem;
+ }
   .cart {
     padding-right: 0px;
   }
   .page {
     background-image: none;
-    background: linear-gradient(to bottom, #ff8986, #ffffff);
+       background: linear-gradient(to bottom, #ff6363, #ffffff);
+
     height: 100%;
     border-radius: 25px;
   }
@@ -491,11 +516,114 @@ main {
     margin-top: 30px;
   }
   .left {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
+    .cardLeft {
+  height: 45rem;
+  width: 35rem; /*27-Amr*/
+  
+}
   .topMiddle {
     align-items: center;
   }
+    .topMiddle p{
+      text-align: center;
+    }
+  .middle {
+    padding-left: 0px;
+    width: 90%;
+  }
+  .colorChose {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .botMiddle {
+    align-items: center;
+  }
+
+  .listSizes {
+    width: 90%;
+}
+
+
+
+.productSelectors{
+  width: 80%;
+}
+}
+/* Extra small devices (phones, less than 576px) */
+@media (min-width: 375px) and (max-width:  576px) {
+  html {
+    font-size: 9px;
+  }
+  section {
+    height: 100%;
+  }
+
+  header {
+    width: 90%;
+    margin-top: 10px;
+  
+  }
+  #logo {
+    margin-left: 0px;
+  }
+  .search {
+    display: none;
+  }
+
+  .cart {
+    gap: 5px;
+   
+    margin-right: 0px;
+  }
+  .exiedBtn {
+    display: none;
+  }
+  .exiedBtnMeidaScreen {
+    display: block;
+    width: 4rem;
+  }
+    #cartImg{
+    display: none;
+  }
+ #cartImgMeidaScreen{
+ display: block;
+ width:  2rem;
+ }
+  .cart {
+    padding-right: 0px;
+  }
+  .page {
+    background-image: none;
+       background: linear-gradient(to bottom, #ff6363, #ffffff);
+
+    height: 100%;
+    border-radius: 25px;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .left {
+    margin-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+    .cardLeft {
+  height: 45rem;
+  width: 35rem; /*27-Amr*/
+  
+}
+  .topMiddle {
+    align-items: center;
+  }
+    .topMiddle p{
+      text-align: center;
+    }
   .middle {
     padding-left: 0px;
     width: 90%;
@@ -520,19 +648,25 @@ main {
 }
 }
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 850px) {
   /* Styles for small devices */
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   section {
     height: 100%;
   }
-
+   .page {
+    background-image: none;
+    background: linear-gradient(to bottom, #ff6363, #ffffff);
+    height: 100%;
+    border-radius: 25px;
+  }
   header {
     width: 85%;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
   
   }
   #logo {
@@ -557,23 +691,29 @@ main {
   .cart {
     padding-right: 0px;
   }
-  .page {
-    background-image: none;
-    background: linear-gradient(to bottom, #ff8986, #ffffff);
-    height: 100%;
-    border-radius: 25px;
+  #cartImg{
+    display: none;
   }
+ #cartImgMeidaScreen{
+ display: block;
+ }
   main {
     flex-direction: column;
-    margin-top: 25px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding-bottom:40px ;
+
+
   }
   .left {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .cardLeft {
   height: 40rem;
   width: 36rem; /*27-Amr*/
- 
+  
 }
   .topMiddle {
     align-items: center;
@@ -581,6 +721,9 @@ main {
   .middle {
     padding-left: 0px;
     width: 90%;
+  }
+  .topMiddle p {
+    text-align: center;
   }
   .colorChose {
     justify-content: center;
@@ -591,9 +734,6 @@ main {
     align-items: center;
   }
 
-  .listSizes {
-    width: 90%;
-}
 
 
 
@@ -603,7 +743,7 @@ main {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 850px) and (max-width: 1000px) {
   html {
     font-size: 11px;
   }
@@ -615,10 +755,11 @@ main {
     width: 95%;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
   
   }
   #logo {
-    margin-left: 0px;
+    margin-left: 15px;
   }
   .search {
     display: none;
@@ -637,6 +778,7 @@ main {
   }
   .cart {
     padding-right: 0px;
+    gap: 20px;
   }
   .page {
     background-image: block;
@@ -646,18 +788,25 @@ main {
   }
   main {
     flex-direction: row;
-    margin-top: 25px;
-  }
-  .left {
     margin-bottom: 30px;
   }
-
+  .left {
+    margin-bottom: 0px;
+    padding-left: 20px;
+  }
+.cardLeft {
+  height: 50rem;
+  width: 36rem; /*27-Amr*/
+  
+}
   .topMiddle {
     align-items: start;
+    gap: 20px;
   }
   .middle {
     padding-left: 0px;
     width: 90%;
+    margin-left: 20px;
   }
   .colorChose {
     justify-content: start;
@@ -668,20 +817,15 @@ main {
     align-items: start;
   }
 
-  .listSizes {
-    width: 90%;
-}
 
 
 
-.productSelectors{
-  width: 80%;
-}
+
   /* Styles for tablets */
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 1000px) and (max-width: 1199.98px) {
     html {
     font-size: 13px;
   }
