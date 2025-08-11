@@ -160,8 +160,8 @@ main {
   padding-left: 80px;
 }
 .cardLeft {
-  height: 38rem;
-  width: 30rem; /*27-Amr*/
+  height: 50vh;
+  width: 40vh;
   background-color: #ff423c;
   border-radius: 2rem;
   display: flex;
@@ -376,76 +376,8 @@ main {
   background-size: cover;
 }
 
-/* .right {
-  height: 100%;
-
-  background: linear-gradient(to right, #fff1f0, #ffffff);
-  border-radius: 40px 0px 0px 0px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.rightContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-}
-.right button {
-  width: 10rem;
-  height: 10rem;
-  background: #ffffff;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0px 10px 15px -10px rgb(99, 99, 99);
-}
-.rightButtonRed {
-  background: #ff423c !important;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-}
-.rightButtonRed img {
-  background: #ff423c;
-}
-.rightButtonRed span {
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-}
-.right button img {
-  width: 3.5rem;
-}
-
-.ratingContainer div {
-  width: 10rem;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-
-  border: 5px solid red;
-}
-.ratingContainer {
-  width: 10rem;
-  height: 10rem;
-  border: 5px solid rgb(0, 204, 255);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.right div span {
-} */
-
-@media (min-width: 100px) and (max-width: 375px) {
+/* Extra extra small devices (phones) */
+@media (max-width: 374.98px) {
   html {
     font-size: 7px;
   }
@@ -466,8 +398,8 @@ main {
 
   .cart {
     gap: 5px;
-
     margin-right: 0px;
+    padding-right: 0px;
   }
   .menuBtn {
     display: none;
@@ -483,13 +415,9 @@ main {
     display: block;
     width: 2rem;
   }
-  .cart {
-    padding-right: 0px;
-  }
   .page {
     background-image: none;
     background: linear-gradient(to bottom, #ff6363, #ffffff);
-
     height: 100%;
     border-radius: 25px;
   }
@@ -504,7 +432,7 @@ main {
   }
   .cardLeft {
     height: 45rem;
-    width: 35rem; /*27-Amr*/
+    width: 35rem;
   }
   .topMiddle {
     align-items: center;
@@ -524,24 +452,22 @@ main {
   .botMiddle {
     align-items: center;
   }
-
   .listSizes {
     width: 90%;
   }
-
   .productSelectors {
     width: 80%;
   }
 }
-/* Extra small devices (phones, less than 576px) */
-@media (min-width: 375px) and (max-width: 576px) {
+
+/* Extra small devices (375px to 575.98px) */
+@media (min-width: 375px) and (max-width: 575.98px) {
   html {
     font-size: 9px;
   }
   section {
     height: 100%;
   }
-
   header {
     width: 90%;
     margin-top: 10px;
@@ -553,32 +479,13 @@ main {
     display: none;
   }
 
-  .cart {
-    gap: 5px;
-
-    margin-right: 0px;
-  }
-  .menuBtn {
-    display: none;
-  }
-  .menuBtnMeidaScreen {
-    display: block;
-    width: 4rem;
-  }
-  #cartImg {
-    display: none;
-  }
   #cartImgMeidaScreen {
     display: block;
     width: 2rem;
   }
-  .cart {
-    padding-right: 0px;
-  }
   .page {
     background-image: none;
     background: linear-gradient(to bottom, #ff6363, #ffffff);
-
     height: 100%;
     border-radius: 25px;
   }
@@ -592,8 +499,8 @@ main {
     padding-right: 0px;
   }
   .cardLeft {
-    height: 45rem;
-    width: 35rem; /*27-Amr*/
+    height: 40rem;
+    width: 30rem;
   }
   .topMiddle {
     align-items: center;
@@ -613,18 +520,16 @@ main {
   .botMiddle {
     align-items: center;
   }
-
   .listSizes {
     width: 90%;
   }
-
   .productSelectors {
     width: 80%;
   }
 }
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 850px) {
-  /* Styles for small devices */
+
+/* Small devices (576px to 849.98px) */
+@media (min-width: 576px) and (max-width: 849.98px) {
   html {
     font-size: 12px;
   }
@@ -649,11 +554,10 @@ main {
   .search {
     display: none;
   }
-
   .cart {
     gap: 10px;
-
     margin-right: 0px;
+    padding-right: 0px;
   }
   .menuBtn {
     display: none;
@@ -661,9 +565,6 @@ main {
   .menuBtnMeidaScreen {
     display: block;
     width: 3.5rem;
-  }
-  .cart {
-    padding-right: 0px;
   }
   #cartImg {
     display: none;
@@ -684,7 +585,7 @@ main {
   }
   .cardLeft {
     height: 40rem;
-    width: 36rem; /*27-Amr*/
+    width: 36rem;
   }
   .topMiddle {
     align-items: center;
@@ -704,114 +605,42 @@ main {
   .botMiddle {
     align-items: center;
   }
-
   .productSelectors {
     width: 80%;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 850px) and (max-width: 1000px) {
+/* Medium devices (850px to 999.98px) */
+@media (min-width: 850px) and (max-width: 999.98px) {
   html {
-    font-size: 11px;
+    font-size: 8px;
   }
-  section {
-    height: 100vh;
-  }
-
-  header {
-    width: 95%;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-  }
-  #logo {
-    margin-left: 15px;
-  }
-  .search {
-    display: none;
-  }
-
-  .cart {
-    gap: 10px;
-    margin-right: 0px;
-  }
-  .menuBtn {
-    display: block;
-  }
-  .menuBtnMeidaScreen {
-    display: none;
-    width: 3.5rem;
-  }
-  .cart {
-    padding-right: 0px;
-    gap: 20px;
-  }
-  .page {
-    background-image: block;
-
-    height: 100%;
-    border-radius: 25px;
-  }
-  main {
-    flex-direction: row;
-    margin-bottom: 30px;
-  }
-  .left {
-    margin-bottom: 0px;
-    padding-left: 20px;
-  }
-  .cardLeft {
-    height: 50rem;
-    width: 36rem; /*27-Amr*/
-  }
-  .topMiddle {
-    align-items: start;
-    gap: 20px;
-  }
-  .middle {
-    padding-left: 0px;
-    width: 90%;
-    margin-left: 20px;
-  }
-  .colorChose {
-    justify-content: start;
-    align-items: start;
-    gap: 30px;
-  }
-  .botMiddle {
-    align-items: start;
-  }
-
-  /* Styles for tablets */
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices (1000px to 1199.98px) */
 @media (min-width: 1000px) and (max-width: 1199.98px) {
   html {
-    font-size: 13px;
+    font-size: 8px;
   }
-
-  /* Styles for desktops */
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* Extra large devices (1200px to 1299.98px) */
+@media (min-width: 1200px) and (max-width: 1299.98px) {
   html {
-    font-size: 14px;
-    /* Styles for large desktops */
+    font-size: 10px;
   }
 }
-@media (min-width: 1300px) {
+
+/* Very large screens (1300px to 1399.98px) */
+@media (min-width: 1300px) and (max-width: 1399.98px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Extra extra large devices (1400px and up) */
+@media (min-width: 1400px) {
   html {
     font-size: 15px;
   }
-  /* Styles for very large screens */
-}
-/* Extra extra large devices (very large screens, 1400px and up) */
-@media (min-width: 1400px) {
-  html {
-    font-size: 16px;
-  }
-  /* Styles for very large screens */
 }
