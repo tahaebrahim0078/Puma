@@ -1,0 +1,105 @@
+/* <div class="page">
+      <div class="left"></div>
+      <div class="right"></div> */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  margin: 0;
+  border: 2px solid black;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 2px solid black;
+
+  background-image: url("/Assets/ProductPage/bgImg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.left-top {
+  height: 15%;
+  border: 2px solid black;
+  overflow: hidden;
+  padding: 10px;
+}
+#logo {
+  max-width: 6rem;
+}
+.left-bottom {
+  flex: 1;
+  width: 100%;
+}
+.left-bottom .prdouct-card .card-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.left-bottom .prdouct-card .card-bg img {
+  border: 2px solid black;
+  width: 15%;
+}
+
+.right {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.right-top {
+  height: 15%;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: end;
+  transition: border-color 0.3s ease;
+  padding: 10px;
+  gap: 20px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.right-top .cart-link img {
+  max-width: 1rem;
+}
+.right-top .menu-btn {
+  background-color: transparent;
+  border: none;
+}
+.right-top .menu-btn img {
+  max-width: 2rem;
+}
+
+.right-bottom {
+  flex: 1;
+  width: 100%;
+}
