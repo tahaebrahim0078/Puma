@@ -108,6 +108,7 @@ header {
   transform: scale(1.1);
   rotate: 180deg;
 }
+
 #cartImg {
   width: 1.5rem;
   transition: all 0.3s ease-in-out;
@@ -197,7 +198,7 @@ main {
 #mainChose:hover {
   transform: scale(1.1);
 }
-.left button {
+.left #addToCarBtn {
   border: none;
   background-color: rgb(0, 0, 0);
   width: 4rem;

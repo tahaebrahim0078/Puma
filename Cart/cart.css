@@ -129,6 +129,9 @@ section .left {
   align-items: end;
   justify-content: center;
 }
+section .left h2 {
+  color: white;
+}
 span {
   background-color: #ff8c8c;
   padding: 0.5rem 1rem;
@@ -182,9 +185,23 @@ span {
 }
 
 .bill-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bill-quantity #qty_counter {
+  width: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
 }
 .bill-deleteBtn {
   flex: 1;
+}
+#totalPriceContainer {
+}
+#total_price {
 }
 .bill-deleteBtn button {
   cursor: pointer;
