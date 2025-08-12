@@ -210,11 +210,28 @@ main {
   right: 6%;
   transition: 0.3s ease;
 }
-.left button:hover {
+.left #addToCarBtn:hover {
   cursor: pointer;
 
   transform: scale(1.1);
 }
+.left #addToCarBtn:hover::after {
+  content: "Add To Cart";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
 .left button img {
   width: 1.6rem;
 

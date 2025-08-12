@@ -6,24 +6,27 @@ const onLoadPageBillContainerHandler = function () {
   if (cartData) {
     cartData.forEach((product) => {
       const productInfoInHTML = `
-       <div class="bill-box" id="${product.productId}">
-                <div class="box-image">
-                  <img src="${product.photoSrc}" alt="Product Image" />
-                </div>
-                <div class="bill-description">
-                  <p>
-                    ${product.productDescription}
-                  </p>
-                </div>
-                <div class="bill-quantity">  <input price =${product.productPrice} id="qty_counter"type="number" value="1" min="1" />
-</div>
-                <div class="bill-price">
-                <span>${product.productPrice}.LE</span></div>
-                <div class="bill-deleteBtn">
-                  <button class="delete_btn"id="${product.productId}">Delete</button>
-                </div>
-              </div>
-    `;
+  <div class="bill-box" id="${product.productId}">
+    <div class="box-image">
+      <img src="${product.photoSrc}" alt="Product Image" />
+    </div>
+    <div class="bill-description">
+      <p>${product.productDescription}</p>
+    </div>
+    <div class="bill-size">Size [${product.productSize || "N/A"}]</div> 
+    <div class="bill-quantity">
+      <input price=${
+        product.productPrice
+      } id="qty_counter" type="number" value="1" min="1" />
+    </div>
+    <div class="bill-price">
+      <span>${product.productPrice}.LE</span>
+    </div>
+    <div class="bill-deleteBtn">
+      <button class="delete_btn" id="${product.productId}">Delete</button>
+    </div>
+  </div>
+`;
 
       BillContainer.insertAdjacentHTML("beforeend", productInfoInHTML);
     });

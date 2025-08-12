@@ -5,19 +5,21 @@ const productPhoto = document.getElementById("mainChose");
 const productName = document.getElementById("product_name");
 const productDescription = document.getElementById("product_description");
 const productPrice = document.getElementById("product_price");
-
 const handleaddToCartBtn = function () {
   const photoSRC = productPhoto.getAttribute("src");
   const name = productName.textContent;
   const description = productDescription.textContent;
   const price = productPrice.textContent;
   const id = getLocalStorageLength() + 1;
+  const size = document.querySelector(".active").textContent;
+
   const productObj = {
     photoSrc: photoSRC,
     productName: name,
     productDescription: description,
     productPrice: price,
     productId: id,
+    productSize: size,
   };
   addProductToLocalStorage(productObj);
 };
