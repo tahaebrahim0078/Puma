@@ -1,3 +1,5 @@
+import { headerInjector } from "./logic/injector/injector.js";
+
 const AllProducts = {
   Product1: {
     color: "red",
@@ -69,3 +71,9 @@ const viewBtnClickHandler = function (e) {
 viewBtn.forEach((button) => {
   button.addEventListener("click", viewBtnClickHandler);
 });
+
+const componentsInjector = function () {
+  headerInjector();
+};
+
+window.onload = componentsInjector;

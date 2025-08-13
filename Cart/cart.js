@@ -1,5 +1,9 @@
+import { getLocalStorageCartData } from "../logic/localStorage.js";
+import { headerInjector } from "../logic/injector/injector.js";
+
 const BillContainer = document.querySelector(".bill-container");
 const totalPrice = document.querySelector("#total_price");
+
 const onLoadPageBillContainerHandler = function () {
   const cartData = getLocalStorageCartData();
 
@@ -73,16 +77,6 @@ const onLoadPageBillContainerHandler = function () {
   totalPrice.textContent = billTotalPrice;
 };
 
-const getLocalStorageCartData = function () {
-  let cartData = window.localStorage.getItem("cart");
-  cartData = JSON.parse(cartData);
-  console.log(cartData.length);
-  if (cartData.length !== 0) {
-    return cartData;
-  }
-
-  return false;
-};
 const getBillTotalPrice = function (products) {
   console.log(products);
   return products.reduce((sum, product) => {
@@ -90,7 +84,10 @@ const getBillTotalPrice = function (products) {
   }, 0);
 };
 
-window.onload = onLoadPageBillContainerHandler;
+window.onload = function () {
+  onLoadPageBillContainerHandler();
+  headerInjector();
+};
 
 document.addEventListener("click", (event) => {
   if (event.target && event.target.matches(".delete_btn")) {

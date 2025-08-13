@@ -1,3 +1,5 @@
+import { headerInjector } from "../logic/injector/injector.js";
+
 const listItems = document.getElementsByClassName("listItem");
 const ColorImages = document.getElementsByClassName("colorImg");
 const addToCartBtn = document.getElementById("addToCarBtn");
@@ -139,4 +141,24 @@ const PageRenderHandler = function () {
   });
 };
 
-window.onload = PageRenderHandler;
+const headerImagesHandler = function () {
+  const cartImg = document.querySelector("#cartImg");
+  if (cartImg) {
+    cartImg.src = "/Assets/Header/cartBlack.png";
+  } else {
+    console.warn("cartImg not found yet");
+  }
+
+  const menuBtnImg = document.querySelector(".exiedBtn");
+  if (menuBtnImg) {
+    menuBtnImg.src = "/Assets/Header/menuBtnBlack.png";
+  } else {
+    console.warn("menuBtnImg not found yet");
+  }
+};
+window.onload = function () {
+  PageRenderHandler();
+  headerInjector().then(() => {
+    headerImagesHandler();
+  });
+};
