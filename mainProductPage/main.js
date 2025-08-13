@@ -22,6 +22,7 @@ const handleaddToCartBtn = function () {
     productSize: size,
   };
   addProductToLocalStorage(productObj);
+  alert("Added to cart successfully ✅");
 };
 
 const getLocalStorageLength = function () {

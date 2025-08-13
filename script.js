@@ -51,6 +51,7 @@ const AllProducts = {
 
 const aboutUsAnchor = document.getElementById("about_Us");
 const viewBtn = document.querySelectorAll(".btnView");
+console.log(viewBtn);
 
 const aboutUsAnchorClickHandler = function () {
   window.open("https://www.linkedin.com/in/amrmagdydb/", "_blank");
@@ -59,10 +60,6 @@ const aboutUsAnchorClickHandler = function () {
 
 aboutUsAnchor.addEventListener("click", aboutUsAnchorClickHandler);
 
-document.onload = function () {
-  changeProductHandler();
-};
-
 const viewBtnClickHandler = function (e) {
   console.log(e.target);
   const color = e.target.classList[1];
@@ -70,5 +67,5 @@ const viewBtnClickHandler = function (e) {
 };
 
 viewBtn.forEach((button) => {
-  addEventListener("click", viewBtnClickHandler);
+  button.addEventListener("click", viewBtnClickHandler);
 });

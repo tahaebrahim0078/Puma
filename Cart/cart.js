@@ -31,6 +31,42 @@ const onLoadPageBillContainerHandler = function () {
       BillContainer.insertAdjacentHTML("beforeend", productInfoInHTML);
     });
   } else {
+    console.log("empty");
+    BillContainer.insertAdjacentHTML(
+      "beforeend",
+      `
+  <div style="
+    text-align: center;
+    padding: 40px 100px;
+    background-color: #f9f9f9;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+  ">
+    <p style="
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 15px;
+    ">
+      Your cart is empty ! 🛒
+    </p>
+    <a href="../index.html" style="
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    " onmouseover="this.style.backgroundColor='#ff4c4c'" onmouseout="this.style.backgroundColor='#ff6b6b'">
+      Go for shopping
+    </a>
+  </div>
+  `
+    );
+
     return;
   }
   const billTotalPrice = getBillTotalPrice(cartData);
@@ -38,9 +74,11 @@ const onLoadPageBillContainerHandler = function () {
 };
 
 const getLocalStorageCartData = function () {
-  const cartData = window.localStorage.getItem("cart");
-  if (cartData) {
-    return JSON.parse(cartData);
+  let cartData = window.localStorage.getItem("cart");
+  cartData = JSON.parse(cartData);
+  console.log(cartData.length);
+  if (cartData.length !== 0) {
+    return cartData;
   }
 
   return false;
