@@ -236,7 +236,7 @@ header {
   object-fit: cover;
   transition: 0.3s ease;
 }
-.btnAddToCart {
+.btnView {
   position: absolute;
   bottom: 50%;
   left: 50%;
@@ -255,7 +255,8 @@ header {
   font-weight: 600;
 }
 
-.card:hover .btnAddToCart {
+.card:hover .btnView {
+  cursor: pointer;
   opacity: 1;
   pointer-events: auto;
 }

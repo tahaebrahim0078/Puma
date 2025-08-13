@@ -1,60 +1,11 @@
-const AllProducts = {
-  Product1: {
-    color: "red",
-    title: "Man’s eqt shoe",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    images: {
-      main: "/Assets/Products/redMainChose.png",
-      img1: "/Assets/Products/redImg1.png",
-      img2: "/Assets/Products/redImg2.png",
-      img3: "/Assets/Products/redImg3.png",
-      img4: "/Assets/Products/redImg4.png",
-      img5: "/Assets/Products/redImg5.png",
-      img6: "/Assets/Products/redImg6.png",
-    },
-    price: "1200",
-  },
-  Product2: {
-    color: "green",
-    title: "Man’s eqt shoe",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    images: {
-      main: "",
-      img1: "/Assets/Products/greenImg1.png",
-      img2: "/Assets/Products/greenImg2.png",
-      img3: "/Assets/Products/greenImg3.png",
-      img4: "/Assets/Products/greenImg4.png",
-      img5: "/Assets/Products/greenImg5.png",
-      img6: "/Assets/Products/greenImg6.png",
-    },
-    price: "1200",
-  },
-  Product3: {
-    color: "purحle",
-    title: "Man’s eqt shoe",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    images: {
-      main: "",
-      img1: "/Assets/Products/purpleImg1.png",
-      img2: "/Assets/Products/purpleImg2.png",
-      img3: "/Assets/Products/purpleImg3.png",
-      img4: "/Assets/Products/purpleImg4.png",
-      img5: "/Assets/Products/purpleImg5.png",
-      img6: "/Assets/Products/purpleImg6.png",
-    },
-    price: "1200",
-  },
-};
 const listItems = document.getElementsByClassName("listItem");
 const ColorImages = document.getElementsByClassName("colorImg");
 const addToCartBtn = document.getElementById("addToCarBtn");
-const productPhoto = document.getElementById("mainChose");
+const productPhoto = document.getElementById("main-Product-Photo");
 const productName = document.getElementById("product_name");
 const productDescription = document.getElementById("product_description");
 const productPrice = document.getElementById("product_price");
+
 const handleaddToCartBtn = function () {
   const photoSRC = productPhoto.getAttribute("src");
   const name = productName.textContent;
@@ -66,7 +17,6 @@ const handleaddToCartBtn = function () {
   const productObj = {
     photoSrc: photoSRC,
     productName: name,
-    productDescription: description,
     productPrice: price,
     productId: id,
     productSize: size,
@@ -126,3 +76,66 @@ Array.from(ColorImages).forEach((element) => {
 });
 
 addToCartBtn.addEventListener("click", handleaddToCartBtn);
+
+// Break
+
+const getColorCode = function (color) {
+  switch (color) {
+    case "red": {
+      return "#FF423C";
+    }
+    case "green": {
+      return "#00E209";
+    }
+    case "purple": {
+      return "#E13AAD";
+    }
+  }
+};
+
+const getColorlinear_gradient = function (color) {
+  switch (color) {
+    case "red": {
+      return "linear-gradient(to bottom, #ff6363, #ffffff)";
+    }
+    case "green": {
+      return "linear-gradient(to bottom, #71ff00, #7a8675)";
+    }
+    case "purple": {
+      return "linear-gradient(to bottom, #ff1dad, #7a8675)";
+    }
+  }
+};
+
+const params = new URLSearchParams(window.location.search);
+
+const mainProductPhoto = document.getElementById("main-Product-Photo");
+const productCard = document.getElementById("product-Card");
+const pageBackground = document.querySelector(".page ");
+const productContainerImages = document.querySelectorAll(
+  ".productImageContainer img"
+);
+
+const PageRenderHandler = function () {
+  mainProductPhoto.src = "";
+  const productColor = params.get("color");
+  const productColorCode = getColorCode(productColor);
+  console.log("colorCode", productColorCode);
+  mainProductPhoto.src = `/Assets/Products/${productColor}MainChose.png`;
+  productCard.style.backgroundColor = productColorCode;
+  pageBackground.style.backgroundImage = `url("/Assets/ProductPage/${productColor}bgImg.png")`;
+  document.documentElement.style.setProperty(
+    "--main-color",
+    getColorCode(productColor)
+  );
+  document.documentElement.style.setProperty(
+    "--linear-bg-color",
+    getColorlinear_gradient(productColor)
+  );
+
+  productContainerImages.forEach((img, index) => {
+    img.src = `/Assets/Products/${productColor}Img${index + 1}.png`;
+  });
+};
+
+window.onload = PageRenderHandler;

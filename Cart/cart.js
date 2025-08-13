@@ -11,7 +11,7 @@ const onLoadPageBillContainerHandler = function () {
       <img src="${product.photoSrc}" alt="Product Image" />
     </div>
     <div class="bill-description">
-      <p>${product.productDescription}</p>
+      <p>${product.productName}</p>
     </div>
     <div class="bill-size">Size [${product.productSize || "N/A"}]</div> 
     <div class="bill-quantity">
